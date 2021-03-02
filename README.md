@@ -1,5 +1,7 @@
 # **Cleopatra**
 
+![Social banner for RankJay](https://github.com/RankJay/Cleopatra/blob/main/Cleopatra_Banner.svg)
+
 **Account :** https://twitter.com/Cleopat51842118
 
 ## Set up notes
