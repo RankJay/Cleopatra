@@ -19,9 +19,12 @@ top = 10 # len(coupon_codes)
 def returnLimit():
     return top
 
-def randomGiveaway(TWEET_ID, OWNER_NAME):
+def randomGiveaway(TWEET_ID, OWNER_NAME, LIMIT):
     tweet_id = TWEET_ID
     handle = OWNER_NAME
+    global top
+
+    top = LIMIT
 
     key = '56iEG9xVd1ToyEoAWJN9PxW1j'
     secret = 'E84NQiMXKBXa7oFAHzL3aFfXY8Yr061UGJRVvXAWDMjfAXCQ40'
