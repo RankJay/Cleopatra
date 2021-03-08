@@ -131,10 +131,12 @@ def replyToTweets():
                 print('connecting to the giveaway thread...', flush=True)
                 tweet = mention.full_text.lower()
                 subHash = '#'
+                giveawayLimit = '!'
                 keywords = [str(x) for x in tweet.split(" ")]
                 thread = [tweet for tweet in keywords if subHash in tweet]
+                Alert = [tweet for tweet in keywords if giveawayLimit in tweet]
                 retweetersScript.retweetersScraping(thread[0][1:])
-                Validators, Identity, Template = getWinners.randomGiveaway(thread[0][1:], OWNER_NAME)
+                Validators, Identity, Template = getWinners.randomGiveaway(thread[0][1:], OWNER_NAME, int(Alert[0][1:]))
 
                 winners_indx = ProcessingRandomness(int(mention.id))
                 GIVEAWAY_DATABASE.append(thread[0][1:])
