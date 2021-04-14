@@ -4,6 +4,8 @@
 
 **Account :** https://twitter.com/Cleopat51842118
 
+Hackathon: EtherPunk 2021
+
 ## Set up notes
 
 ### How to install Tweepy
